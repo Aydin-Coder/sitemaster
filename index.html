@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <!--Fonts, Icons, Stylesheets, etc.-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/x-icon" href="Images/Fav Icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/w3.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+  <script src="Script/script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SiteMaster | خانه</title>
+
+  <head>
+    <!--Navigation-->
+    <div class="header" id="MainHeader">
+      <a href="index.html" class="logo"><img src="Images/SiteMaster.png" style="height: 30px;"></a>
+      <button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+      <button id="myBtn" class="darkm"><i class="fa fa-question-circle"></i></button> 
+      <div class="header-right">
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="test.html">وبسایت بنویس</a>
+        <a href="about.html">درباره ما</a>
+        <a href="contact.html">ارتباط با ما</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">درس ها <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="frontend.html">Front-End</a>
+            <a href="backend.html">Back-End</a>
+            <a href="design.html">Design</a>
+          </div>
+        </div>
+
+        <a href="index.html" class="active">خانه</a>
+      </div>
+    </div>          
+  </head>
+
+  <body>
+    <br class="phone">
+    <br class="phone">
+    <br class="phone">
+
+    <!--Image at the Top of the Page (عکس بالای صفحه)-->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Site Master</h1>
+        <p>ساخت سایت ساده در سه سوت</p>
+        <a href="frontend.html"><button class="learn">یادگیری را شروع کن</button></a>
+      </div>
+    </div> 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 style="text-align: center;">استفاده از سایت مستر</h2>
+    </div>
+    <div class="modal-body">
+      <p> برای دسترسی به مطالب آموزشی سایت،‌از قسمت درس ها در منو بالای صفحه یکی از گزینه های فرانت اند، بک اند و دیزاین را انتخاب کنید. در هر کدام از این بخش ها زبان های برنامه نویسی مربوط به آن بخش قرار دارد. برای دسترسی به مطالب آموزشی هر زبان روی دکمه ی آن زبان برنامه نویسی کلیک کنید</p>
+      <p>بخش وبسایت بنویس هم در منو دیده می شود</p>
+    </div>
+    <div class="modal-footer">
+      <h3>aydin.ebrahimi@gmail.com</h3>
+      <h3>mahdiadibnafisi@gmail.com</h3>
+    </div>
+  </div>
+</div>
+
+
+    <!--FrontEnd Lesson Example Cards(کارت های سه بعدی)-->
+    <br>
+    <h1 class="colored">سایت نویسی : فرانت اند</h1>
+    <hr class="space">
+    <div class="wrapper">
+
+      <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                  <div class="front" style="background-image: url(Images/JavaScript.png)">
+                      <div class="inner">
+                          <p style="color: #FFF;">JavaScript آموزش</p>
+                          <span>Backend Code</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p>در آپدیت بعدی اضافه می شوند</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                  <div class="front" style="background-image: url(Images/CSS.png)">
+                      <div class="inner">
+                          <p style="color: #FFF;">CSS آموزش</p>
+                          <span>Design Code</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p>در آپدیت بعدی اضافه می شوند</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front" style="background-image: url(Images/HTML.png)">
+                    <div class="inner">
+                        <p style="color: #FFF;">HTML آموزش</p>
+                        <span>Frontend Code</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <p>از بخش درس ها وارد شوید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <!--BackEnd Lesson Example Cards (کارت های سه بعدی)-->
+    <hr class="blue">
+    <br>
+    <h1 class="colored">سایت نویسی : بک اند</h1>
+    <hr class="space">
+    <div class="wrapper">
+
+      <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                  <div class="front" style="background-image: url(Images/JavaScript.png)">
+                      <div class="inner">
+                          <p style="color: #FFF;">PHP آموزش</p>
+                          <span>Backend Code</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p>در آپدیت بعدی اضافه می شوند</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                  <div class="front" style="background-image: url(Images/CSS.png)">
+                      <div class="inner">
+                          <p style="color: #FFF;">Python آموزش</p>
+                          <span>Backend Code</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="inner">
+                          <p>در آپدیت بعدی اضافه می شوند</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr class="blue">
+    <br>
+
+    <!-- The grid: سه ستون یک ردیف -->
+   <div class="row3">
+     <div class="column3" onclick="openTab('b1');" style="background: #075AAC;">HTML</div>
+     <div class="column3" onclick="openTab('b2');" style="background: #046DD6;">CSS</div>
+     <div class="column3" onclick="openTab('b3');" style="background: #0080FF;">JavaScript</div>
+   </div>
+
+    <!-- The expanding grid (پنهان شده) -->
+    <div id="b1" class="containerTab" style="color:white;display:none;background:#075AAC">
+     <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa fa-close" style="color:white;"></i></span>
+     <h2 style="color:white;">HTML</h2>
+      <p style="color:white;text-align: right;"> با استفاده از این درس، شما می توانید سایت های بدون رنگ و طرح ساده بسازید. بهتر است که یادگیری سایت نویسی خود را با این درس شروع کنید</p>
+    </div>
+
+   <div id="b2" class="containerTab" style="color:white;display:none;background:#046DD6">
+     <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa fa-close" style="color:white;"></i></span>
+     <h2 style="color:white;">CSS</h2>
+      <p style="color:white;">در این درس شما با تمام امکانات سی اس اس آشنا می شوید  </p>
+    </div>
+
+    <div id="b3" class="containerTab" style="color:white;display:none;background:#0080FF">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa fa-close" style="color:white;"></i></span>
+      <h2 style="color:white;">JavaScript</h2>
+      <p style="color:white;">Lorem ipsum..</p>
+    </div>
+    <br>
+    <hr class="blue">
+
+    <!--متن ها و عکس ها-->
+    <div class row>
+      <div class="column2"><p style="font-size: 32px;">وبسایت کد مستر بهترین سایت برای یادگیری برنامه نویسی با پایتون و سایت نویسی است. این وبسایت دارای فیلم ها و فایل های پی دی اف آموزشی برای افرادی است که برای اولین بار می خواهند از پایتون استفاده کنند یا اولین وبسایت خود را بنویسند</p></div>
+      <div class="column2"><img class="columned" src="Images/Billboard Mockup.png"></div>
+    </div>
+    <br>
+    <hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><br>
+    <hr class="blue">
+    <div class row>
+      <div class="column21"><p style="font-size: 32px;">از درس های کدمستر در هر کجا که هستید با گوشی یا کامپیوتر استفاده کنید. وبسایت ما رسپانسیو است، یعنی در موبایل حالت دیگری به خود می گیرد. در بخش وبسایت نویسی، کامل توضیح داده شده است که چطور می توانید وبسایت خودتان را رسپانسیو کنید</p></div>
+      <div class="column21"><img style="width:500px;" src="Images/iPhone Mockup 3.png"></div>
+    </div>
+    <br>
+    <hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><hr class="space"><br><br>   
+
+    <!-- Website Footer (قسمت پایین صفحه)-->
+
+      <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <IMG SRC="Images/Footer SiteMaster.png" ALT="" WIDTH=400 >
+  
+          <p class="footer-links">
+            <a href="index.html">Home</a> ·
+            <a href="about.html">About</a> ·
+            <a href="python.html">Python</a> ·
+            <a href="html.html">HTML</a> ·
+            <a href="contact.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">CodeMaster &copy; 2023</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-user"></i>
+            <p><span>creators</span>Aydin & Mahdi</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+98 9141838915</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:aydin.ebrahimi@gmail.com" style="color: whitesmoke;">aydin.ebrahimi@gmail.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about" style="color: white;">
+            <span style="font-size: 36px;">درباره ما</span> وبسایت سایت مستر برای یاد دادن برنامه نویسی درست شده است. برای اطلاعات بیشتر به صفحه درباره ما بروید
+          </p>
+  
+          <div class="footer-icons">
+  
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Aydin-Coder"><i class="fa fa-github"></i></a>
+  
+          </div>
+  
+        </div>
+  
+      </footer>  
+
+  </body>
+</html>
+
+<script>
+    //Dark Mode Code
+    const toggle = document.getElementById("toggle");
+  const theme = window.localStorage.getItem("theme");
+  if (theme === "dark") document.body.classList.add("dark");
+  
+  toggle.addEventListener("click", () => {
+  
+  document.body.classList.toggle("dark");
+  
+  if (theme === "dark") {
+  
+  window.localStorage.setItem("theme", "light");
+  
+  } else window.localStorage.setItem("theme", "dark");
+  
+  });
+  
+  refresh.addEventListener("click", () => {
+  
+  window.location.reload();
+  
+  });
+  
+
+</script>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

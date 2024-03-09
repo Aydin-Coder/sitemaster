@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+  <!--Fonts, Icons, Stylesheets, etc.-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/html.css">
+  <link rel="icon" type="image/x-icon" href="Images/Fav Icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/w3.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+  <script src="Script/script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SiteMaster | HTML</title>
+
+  <head>
+    <!--Navigation-->
+    <div class="header" id="MainHeader">
+      <a href="index.html" class="logo"><img src="Images/SiteMaster.png" style="height: 30px;"></a>
+      <button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+      <button id="myBtn" class="darkm"><i class="fa fa-question-circle"></i></button> 
+      <div class="header-right">
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="test.html">وبسایت بنویس</a>
+        <a href="about.html">درباره ما</a>
+        <a href="contact.html">ارتباط با ما</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">درس ها <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="frontend.html">Front-End</a>
+            <a href="backend.html">Back-End</a>
+            <a href="design.html">Design</a>
+          </div>
+        </div>
+
+        <a href="index.html" >خانه</a>
+      </div>
+    </div>          
+  </head>
+
+  <body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 style="text-align: center;">استفاده از سایت مستر</h2>
+    </div>
+    <div class="modal-body">
+      <p> برای دسترسی به مطالب آموزشی سایت،‌از قسمت درس ها در منو بالای صفحه یکی از گزینه های فرانت اند، بک اند و دیزاین را انتخاب کنید. در هر کدام از این بخش ها زبان های برنامه نویسی مربوط به آن بخش قرار دارد. برای دسترسی به مطالب آموزشی هر زبان روی دکمه ی آن زبان برنامه نویسی کلیک کنید</p>
+      <p>بخش وبسایت بنویس هم در منو دیده می شود</p>
+    </div>
+    <div class="modal-footer">
+      <h3>aydin.ebrahimi@gmail.com</h3>
+      <h3>mahdiadibnafisi@gmail.com</h3>
+    </div>
+  </div>
+</div>
+
+    <br class="phone">
+    <br class="phone">
+    <br class="phone">
+    <br class="phone">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">HTML معرفی</button>
+          <button class="tablinks" onclick="openCity(event, 'VS')">HTML ویرایشگر های</button>
+          <button class="tablinks" onclick="openCity(event, 'Tag')">معرفی تگ </button>
+          <button class="tablinks" onclick="openCity(event, 'hTags')"> تگ های سر فصل</button>
+          <button class="tablinks" onclick="openCity(event, 'pTags')"> تگ پاراگراف</button>
+          <button class="tablinks" onclick="openCity(event, 'Comment')"> تگ کامنت</button>
+          <button class="tablinks" onclick="openCity(event, 'href')"> تگ پیوند</button>
+          <button class="tablinks" onclick="openCity(event, 'img')">تگ تصویر</button>
+          <button class="tablinks" onclick="openCity(event, 'film')">تگ فیلم</button>
+          <button class="tablinks" onclick="openCity(event, 'class')">class and id </button>
+          <button class="tablinks" onclick="openCity(event, 'iframe')">&lt;iframe&gt; تگ </button>
+          <button class="tablinks" onclick="openCity(event, 'azmoon')">HTML آزمون  </button>
+        </div>
+        
+        <div id="Intro" class="tabcontent" >
+          <h3>HTML معرفی</h3>
+          <p>H.T.M.L</p>
+          <p>Hyper.Text.Markup.Language</p>
+          <p>برای نوشتن وبسایت های ساده استفاده می شود و بدون کمک زبان های دیگر مثل سی اس اس و جاوا اسکریپت زیاد به درد نمی خورد</p>
+
+        </div>
+        
+        <div id="VS" class="tabcontent">
+          <h3>HTML ویرایشگر های</h3>
+          <p>ویرایشگر های مهم این زبان و زبان های دیگر در زیر مشاهده می شوند</p> 
+          <p>VS Code</p>
+          <p>Notepad ++</p>
+          <p>Atom</p>
+        </div>
+        
+        <div id="Tag" class="tabcontent">
+          <h3 style="font-size: 40px;"><strong>معرفی تگ</strong></h3>
+          <p>تگ ها کلمات انگلیسی هستند که بین دو علامت بزرگتر و کوچکتر می آیند</p>
+          <p>تگ ها به کامپیوتر می گویند که کدام عناصر عکس هستند،‌کدام متن ها بزرگتر هستند و غیره</p>
+          <p> مثال هایی برای تگ ها در زیر آورده ایم</p>
+          <input rows="10" cols="50" class="code" value="&lt;h1&gt; Hello, World! &lt;/h1&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+          <input rows="10" cols="50" class="code" value="&lt;p&gt; Hello, World! &lt;/p&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+          <p> ادامه این درسنامه به شما تگ های مختلفی را آموزش می دهد</p>
+        </div>
+
+        <div id="hTags" class="tabcontent">
+            <h3 style="font-size: 40px;"><strong>تگ های سر فصل</strong></h3>
+            <p>.شش نوع تگ سرفصل داریم که اندازه ی فنت آنها از ۱ تا ۶ کوچک تر می شود</p>
+            <p>:تگ های سر فصل در این زبان به شکل زیر هستند</p>
+            <input rows="10" cols="50" class="code" value="&lt;h1&gt; Hello, World! &lt;/h1&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <input rows="10" cols="50" class="code" value="&lt;h2&gt; Hello, World! &lt;/h2&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <input rows="10" cols="50" class="code" value="&lt;h3&gt; Hello, World! &lt;/h3&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <input rows="10" cols="50" class="code" value="&lt;h4&gt; Hello, World! &lt;/h4&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <input rows="10" cols="50" class="code" value="&lt;h5&gt; Hello, World! &lt;/h5&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <input rows="10" cols="50" class="code" value="&lt;h6&gt; Hello, World! &lt;/h6&gt;" style=" width: 75%; height: 100px;"></input><hr class="space">
+            <p style="font-size: 32px;"><strong> بزرگترین است h1 کوچکترین و تگ h6 تگ </strong></p>
+            <div class="centered"><a href="test.html"><button class="learn">! اینجا امتحانش کن</button></a></div>
+        </div>  
+
+        <div id="pTags" class="tabcontent">
+            <h3 style="font-size: 40px;"><strong>تگ پاراگراف</strong></h3>
+            <p>.تگ پاراگراف برای نوشتن متن های ساده استفاده می شود</p>
+            <p>:در این زبان تگ پاراگراف به شکل زیر است</p>
+            <input rows="10" cols="50" class="code" value="&lt;p&gt; Hello, World! &lt;/p&gt;" style=" width: 75%; height: 100px;"></input>
+            <p>:اکنون می توانید آموخته های خود را درباره پاراگراف و سرفصل، اینجا امتحان کنید</p>
+            <div class="clearfix">
+                <div class="column">
+                    <h2>Code Editor</h2>
+                    <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+                </div>
+                <div class="column">
+                    <h2>Result</h2>
+                    <iframe id="result" class="result" width="100%" height="400"></iframe>
+                </div>
+            </div>
+            <div class="centered">
+            <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+            <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+        </div>
+        </div>  
+        <div id="Comment" class="tabcontent">
+            <h3 style="font-size: 40px;"><strong> کامنت گذاری</strong</h3>
+            <p>کامنت گذاری برای نوشتن کد تمیز لازم است و اگر می خواهید کد هایتان را با دیگران در اشتراک بگذارید، کامنت گذاری باعث می شود بتوانند از کد شما به خوبی استفاده کنند</p>
+            <p>علامت یا تگ های کامنت گذاری در زبان های برنامه نویسی متفاوت است. در این بخش تگ کامنت گذاری در ۳ زبان زیر معرفی می شود</p>
+            <p style="font-size: 24px; text-align: center;"><strong>HTML, CSS, JavaScript</strong></p>
+            <h3 style="font-size: 40px;"><strong>HTML تگ کامنت</strong</h3>
+            <p>در این زبان برنامه نویسی کامنت گذاری به شکل زیر است</p>
+            <input rows="10" cols="50" class="code" value="&lt;!--Hello, World!--&gt;" style=" width: 75%; height: 100px;"></input>
+            <p>&lt;!--کامنت خود را اینجا بنویسید--&gt;</p>
+            <h3 style="font-size: 40px;"><strong>CSS  کامنت</strong</h3>
+            <p>در این زبان برنامه نویسی کامنت گذاری به شکل زیر است</p>
+            <input rows="10" cols="50" class="code" value="/* Hello, World! */" style=" width: 75%; height: 100px;"></input>
+            <p>/* کامنت خود را اینجا بنویسید */</p>
+            <h3 style="font-size: 40px;"><strong>JavaScript  کامنت</strong</h3>
+            <p>در این زبان برنامه نویسی کامنت گذاری به شکل زیر است</p>
+            <input rows="10" cols="50" class="code" value="// Hello, World!" style=" width: 75%; height: 100px;"></input>
+            <p>// کامنت خود را اینجا بنویسید </p>
+            <a href="test.html"><button class="learn">! اینجا امتحانش کن</button></a>
+            </div> 
+            <div id="href" class="tabcontent">
+            <strong><h3 style="font-size: 40px;">تگ پیوند</h3></strong>
+            <p>معمولا داخل تگ لینک می آید و برای وصل کردن یک لینک به یک تگ است</p>
+            <p>مثال زیر آن را در تگ لینک به طوری نشان می دهد که اگر روی لینک کلیک کنیم به لینک داخل تگ پیوند می رویم</p>
+            <input rows="10" cols="50" class="code" value="&lt;a href=''لینک شما''&lt;/a&gt;" style=" width: 75%; height: 100px;"></input>
+            <div class="clearfix">
+              <div class="column">
+                  <h2>Code Editor</h2>
+                  <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+              </div>
+              <div class="column">
+                  <h2>Result</h2>
+                  <iframe id="result" class="result" width="100%" height="400"></iframe>
+              </div>
+          </div>
+          <div class="centered">
+          <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+          <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+      </div>  
+            
+        </div>  
+        <div id="img" class="tabcontent">
+            <strong><h3 style="font-size: 40px;">تگ تصویر</h3></strong>
+            <p>:برای نمایش تصویر در وبسایت است و به صورت زیر است</p>
+            <input rows="10" cols="50" class="code" value="&lt;img src=''لینک تصویر'' &lt;/img&gt;" style=" width: 75%; height: 100px;"></input><br>
+            <div class="clearfix">
+              <div class="column">
+                  <h2>Code Editor</h2>
+                  <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+              </div>
+              <div class="column">
+                  <h2>Result</h2>
+                  <iframe id="result" class="result" width="100%" height="400"></iframe>
+              </div>
+          </div>
+          <div class="centered">
+          <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+          <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+      </div>  
+        </div>  
+
+
+        <div id="film" class="tabcontent">
+            <h3>تگ فیلم</h3>
+            <p>:برای نمایش ویدیو در وبسایت است و به صورت زیر است</p>
+            <input rows="10" cols="50" class="code" value="&lt;video src=''لینک ویدیو'' &lt;/video&gt;" style=" width: 75%; height: 100px;"></input><br>
+            <div class="clearfix">
+              <div class="column">
+                  <h2>Code Editor</h2>
+                  <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+              </div>
+              <div class="column">
+                  <h2>Result</h2>
+                  <iframe id="result" class="result" width="100%" height="400"></iframe>
+              </div>
+          </div>
+          <div class="centered">
+          <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+          <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+      </div>  
+        </div>  
+    <div id="class" class="tabcontent">
+      <h3 style="font-size: 40px;"><strong> class="" </strong></h3>
+      <p>تگ کلاس برای تعیین کلاس برای یک عنصر در این زبان استفاده می شود</p>
+      <p>ویژگی کلاس  یک یا چند نام کلاس را برای یک عنصر مشخص می کند
+        کلاس ها توسط جاوا اسکریپت و سی اس اس برای انتخاب و دسترسی به عناصر خاص استفاده می شوند
+        ویژگی class را می توان در هر عنصر  استفاده کرد
+        نام کلاس به حروف بزرگ و کوچک حساس است
+        عناصر مختلف  می توانند به یک نام کلاس اشاره کنند
+        جاوا اسکریپت می تواند با متد زیر به عناصری با نام کلاس خاص دسترسی پیدا کند
+        </p>
+        <input rows="10" cols="50" class="code" value="getElementsByClassName()" style=" width: 75%; height: 100px;"></input><br>
+        <h3 style="font-size: 40px;"><strong> id=""" </strong></h3>
+        <p>ویژگی آی دی برای تعیین یک شناسه منحصر به فرد برای یک عنصر  استفاده می شود.
+
+          شما نمی توانید بیش از یک عنصر با شناسه یکسان در یک سند  داشته باشید.
+          ویژگی آی دی یک شناسه منحصر به فرد را برای یک عنصر  مشخص می کند. مقدار ویژگی آی دی باید در سند  منحصر به فرد باشد
+          
+          تفاوت بین کلاس و شناسه
+          یک نام کلاس می تواند توسط چندین عنصر  استفاده شود، در حالی که یک نام شناسه باید فقط توسط یک عنصر  در صفحه استفاده شود.
+          </p>
+          <div class="clearfix">
+            <div class="column">
+                <h2>Code Editor</h2>
+                <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+            </div>
+            <div class="column">
+                <h2>Result</h2>
+                <iframe id="result" class="result" width="100%" height="400"></iframe>
+            </div>
+        </div>
+        <div class="centered">
+        <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+        <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+    </div>
+  </div>  
+  <div id="iframe" class="tabcontent">
+    <h3>iframe تگ </h3>
+    <p>آی فریم برای نمایش یک صفحه دیگر در وبسایت استفاده می شود</p>
+    <p>به صورت زیر است</p>
+    <input rows="10" cols="50" class="code" value="&lt;iframe src=''لینک '' &lt;/iframe&gt;" style=" width: 75%; height: 100px;"></input><br>
+    <div class="clearfix">
+      <div class="column">
+          <h2>Code Editor</h2>
+          <textarea id="code" rows="10" cols="50" class="code" oninput="runCode()"></textarea>
+      </div>
+      <div class="column">
+          <h2>Result</h2>
+          <iframe id="result" class="result" width="100%" height="400"></iframe>
+      </div>
+  </div>
+  <div class="centered">
+  <input type="checkbox" id="checkbox" onchange="runCode()" class="realtime">  Real-time Update<br><br>
+  <button onclick="showResult()" class="run">Run Code</button><br><hr class="desk"><hr class="space">
+</div>  
+    
+</div>  
+<div id="azmoon" class="tabcontent">
+  <h3>HTML آزمون </h3>
+  <p>باآزمون ۴ سوالی زیر سواد خودتان را امتحان کنید</p>
+  <h2 class="quizHeader">کوییز ریاضی نهم</h2>
+  <div style="overflow-x:auto;">
+	<table>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1.<img class="responsive" style="width: 400px;" src="Images/Exams/HTML/q1.png" loading="eager" alt="q1"></img></p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="0">
+	        <label id="correctString1">گزینه ۱</label>
+			<br>
+	        <input class="answer" type="radio" name="q1" value="1">
+	        <label>گزینه ۲</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>گزینه ۳</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>گزینه ۴</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2.<img class="responsive" style="width: 400px;" src="Images/Exams/HTML/q2.png" loading="eager" alt="q2"></img></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>گزینه ۱</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label id="correctString2">گزینه ۲</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>گزینه ۳</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label>گزینه ۴</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3.<img class="responsive" style="width: 400px;" src="Images/Exams/HTML/q3.png" loading="eager" alt="q3"></img></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>گزینه ۱</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>گزینه ۲</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">گزینه ۳</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>گزینه ۴</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4.<img class="responsive" style="width: 400px;" src="Images/Exams/HTML/q4.png" loading="eager" alt="q4"></img></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>گزینه ۱</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label id="correctString4">گزینه ۲</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>گزینه ۳</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label >گزینه ۴</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+</div>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div class="quizAnswers" id="correctAnswer5"></div>
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+</div>  
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk">
+
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+            <!-- Website Footer -->
+
+      <footer class="footer-distributed" style="bottom: 0;" class="autohide">
+  
+        <div class="footer-left">
+  
+          <IMG SRC="Images/Footer SiteMaster.png" ALT="" WIDTH=400 >
+  
+          <p class="footer-links">
+            <a href="index.html">Home</a> ·
+            <a href="about.html">About</a> ·
+            <a href="python.html">Python</a> ·
+            <a href="html.html">HTML</a> ·
+            <a href="contact.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">CodeMaster &copy; 2023</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-user"></i>
+            <p><span>creators</span>Aydin & Mahdi</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+98 9141838915</p>
+          </div>
+  
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:aydin.ebrahimi@gmail.com" style="color: whitesmoke;">aydin.ebrahimi@gmail.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about" style="color: white;">
+            <span style="font-size: 36px;">درباره ما</span> وبسایت سایت مستر برای یاد دادن برنامه نویسی درست شده است. برای اطلاعات بیشتر به صفحه درباره ما بروید
+          </p>
+  
+        <div class="footer-icons">
+  
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Aydin-Coder"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+    </div>
+  
+      </footer>  
+      <div class="bfooter">
+        <br>
+        <br>
+        <p>Site Master</p>
+        <p>aydin.ebrahimi@gmail.com</p>
+        <p>+98 9122466658</p>
+        <div class="footer-icons">
+        <a href="https://github.com/Aydin-Coder"><i class="fa fa-github" style="color: #000;"></i></a>
+        <a href="https://mail.google.com/"><i class="fa fa-envelope-o" style="color: #000;"></i></a>
+      </div>
+        <br>
+        <br>
+      </div>
+
+  </body>
+</html>
+
+<script>
+    //Dark Mode Code
+    const toggle = document.getElementById("toggle");
+  const theme = window.localStorage.getItem("theme");
+  if (theme === "dark") document.body.classList.add("dark");
+  
+  toggle.addEventListener("click", () => {
+  
+  document.body.classList.toggle("dark");
+  
+  if (theme === "dark") {
+  
+  window.localStorage.setItem("theme", "light");
+  
+  } else window.localStorage.setItem("theme", "dark");
+  
+  });
+  
+  refresh.addEventListener("click", () => {
+  
+  window.location.reload();
+  
+  });
+
+function runCode() {
+                    var checkbox = document.getElementById("checkbox");
+                    if (checkbox.checked) {
+                        var code = document.getElementById("code").value;
+                        var result = document.getElementById("result").contentWindow.document;
+                        result.open();
+                        result.writeln(code);
+                        result.close();
+                    }
+                }
+        
+                function showResult() {
+                    var code = document.getElementById("code").value;
+                    var result = document.getElementById("result").contentWindow.document;
+                    result.open();
+                    result.writeln(code);
+                    result.close();
+                }
+                function submitQuiz() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4') + answerScore('q5'));
+		console.log("CalcScore: " + calcScore); // it works!
+
+	// function to return correct answer string
+		function correctAnswer (correctStringNo, qNumber) {
+			console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
+			return ("جواب درست برای سوال " + qNumber + ": &nbsp;<strong>" +
+				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
+			}
+
+	// print correct answers only if wrong (calls correctAnswer function)
+		if (answerScore('q1') === 0) {
+			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
+		}
+		if (answerScore('q2') === 0) {
+			document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
+		}
+		if (answerScore('q3') === 0) {
+			document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
+		}
+		if (answerScore('q4') === 0) {
+			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
+		}
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "Your Score: " + calcScore +"/" + questionCounter;
+	// if 5/5, "perfect score!"
+		if (calcScore === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
+		};
+		document.getElementById('userScore').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+</script>
+
+<style>
+  .tab {
+  float: right;
+  border: 1px solid #0080FF;
+  width: 15%;
+  height: auto;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #1E90FF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #0080FF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: right;
+  padding: 0px 12px;
+  border: 1px solid #0080FF;
+  width: 85%;
+  border-left: none;
+  height: auto;
+  text-align: right;
+  transition: 0.3s;
+}
+.active {
+background-color: green;
+color: white;
+}
+.main {
+margin-left: 200px; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+.bfooter {
+display: none;
+text-align: center;
+background-color: #1E90FF;
+bottom: 0;
+}
+@media screen and (max-width: 600px) {
+.tab button {
+  padding: 10px 8px; /* Adjust the padding of the tab buttons */
+  font-size: 14px;   /* Reduce the font size of the tab buttons */
+}
+.tabcontent {
+  width: 100%;       /* Make the tab content full width */
+}
+.tab {
+width: 100%;
+}
+.autohide{
+display: none;
+}
+footer{
+display: none;
+}
+.bfooter{
+display: block;
+}
+}
+input {
+border-radius: 16px;
+border-color: #0080FF;
+font-size: 24px;
+font-family: monospace;
+font-weight: lighter;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    .run {
+        background-color: #0080FF;
+        color: #FFF;
+        border-radius: 16px;
+        width: 160px;
+        height: 80px;
+        font-size: 24px;
+        border-color: #1f3b67;
+        border-width: 4px;
+    }
+    .code {
+        height: 400px;
+        width: 100%;
+        font-family: monospace;
+        border-color: #0080FF;
+        border: solid #0080FF;
+    }
+    .result {
+        height: 400px;
+        width: 100%;
+        border-color: #0080FF;
+        border: solid #0080FF;
+        background-color: #FFF;
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    .centered {
+        text-align: center;
+    }
+    .realtime {
+        background-color: #b8d3ff;
+        border-color: #0080FF;
+    }
+
+</style>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

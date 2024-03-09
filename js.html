@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <!--Fonts, Icons, Stylesheets, etc.-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/html.css">
+  <link rel="icon" type="image/x-icon" href="Images/Fav Icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/w3.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+  <script src="Script/script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SiteMaster | JavaScript</title>
+
+  <head>
+    <!--Navigation-->
+    <div class="header" id="MainHeader">
+      <a href="index.html" class="logo"><img src="Images/SiteMaster.png" style="height: 30px;"></a>
+      <button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+      <div class="header-right">
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="test.html">وبسایت بنویس</a>
+        <a href="about.html">درباره ما</a>
+        <a href="contact.html">ارتباط با ما</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">درس ها <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="frontend.html">Front-End</a>
+            <a href="backend.html">Back-End</a>
+            <a href="design.html">Design</a>
+          </div>
+        </div>
+
+        <a href="index.html" >خانه</a>
+      </div>
+    </div>          
+  </head>
+
+  <body>
+    <br class="phone">
+    <br class="phone">
+    <br class="phone">
+    <br class="phone">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">JavaScript معرفی</button>
+          <button class="tablinks" onclick="openCity(event, 'VS')">JavaScript ویرایشگر های</button>
+          <button class="tablinks" onclick="openCity(event, 'Var')">معرفی متغیر </button>
+        </div>
+        
+        <div id="Intro" class="tabcontent">
+          <h3>JavaScript معرفی</h3>
+          <p style="color: red;">به زودی به روز رسانی می شود</p>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <div id="VS" class="tabcontent">
+          <h3>JavaScript ویرایشگر های</h3>
+          <p style="color: red;">.به زودی به روز رسانی می شود</p> 
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <div id="Var" class="tabcontent">
+          <h3>معرفی تگ</h3>
+          <p style="color: red;">به زودی به روز رسانی می شود</p>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk"><hr class="desk">
+
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+            <!-- Website Footer -->
+
+      <footer class="footer-distributed" style="bottom: 0;" class="autohide">
+  
+        <div class="footer-left">
+  
+          <IMG SRC="Images/Footer SiteMaster.png" ALT="" WIDTH=400 >
+  
+          <p class="footer-links">
+            <a href="index.html">Home</a> ·
+            <a href="about.html">About</a> ·
+            <a href="python.html">Python</a> ·
+            <a href="html.html">HTML</a> ·
+            <a href="contact.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">CodeMaster &copy; 2023</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-user"></i>
+            <p><span>creators</span>Aydin & Mahdi</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+98 9141838915</p>
+          </div>
+  
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:aydin.ebrahimi@gmail.com" style="color: whitesmoke;">aydin.ebrahimi@gmail.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about" style="color: white;">
+            <span style="font-size: 36px;">درباره ما</span> وبسایت سایت مستر برای یاد دادن برنامه نویسی درست شده است. برای اطلاعات بیشتر به صفحه درباره ما بروید
+          </p>
+  
+        <div class="footer-icons">
+  
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Aydin-Coder"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+    </div>
+  
+      </footer>  
+      <div class="bfooter">
+        <br>
+        <br>
+        <p>Site Master</p>
+        <p>aydin.ebrahimi@gmail.com</p>
+        <p>+98 9122466658</p>
+        <div class="footer-icons">
+        <a href="https://github.com/Aydin-Coder"><i class="fa fa-github" style="color: #000;"></i></a>
+        <a href="https://mail.google.com/"><i class="fa fa-envelope-o" style="color: #000;"></i></a>
+      </div>
+        <br>
+        <br>
+      </div>
+
+  </body>
+</html>
+
+<script>
+    //Dark Mode Code
+    const toggle = document.getElementById("toggle");
+  const theme = window.localStorage.getItem("theme");
+  if (theme === "dark") document.body.classList.add("dark");
+  
+  toggle.addEventListener("click", () => {
+  
+  document.body.classList.toggle("dark");
+  
+  if (theme === "dark") {
+  
+  window.localStorage.setItem("theme", "light");
+  
+  } else window.localStorage.setItem("theme", "dark");
+  
+  });
+  
+  refresh.addEventListener("click", () => {
+  
+  window.location.reload();
+  
+  });
+
+function runCode() {
+                    var checkbox = document.getElementById("checkbox");
+                    if (checkbox.checked) {
+                        var code = document.getElementById("code").value;
+                        var result = document.getElementById("result").contentWindow.document;
+                        result.open();
+                        result.writeln(code);
+                        result.close();
+                    }
+                }
+        
+                function showResult() {
+                    var code = document.getElementById("code").value;
+                    var result = document.getElementById("result").contentWindow.document;
+                    result.open();
+                    result.writeln(code);
+                    result.close();
+                }
+</script>
+
+<style>
+  .tab {
+  float: right;
+  border: 1px solid #0080FF;
+  width: 15%;
+  height: auto;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #1E90FF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #0080FF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: right;
+  padding: 0px 12px;
+  border: 1px solid #0080FF;
+  width: 85%;
+  border-left: none;
+  height: auto;
+  text-align: right;
+  transition: 0.3s;
+}
+.active {
+background-color: green;
+color: white;
+}
+.main {
+margin-left: 200px; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+.bfooter {
+display: none;
+text-align: center;
+background-color: #1E90FF;
+bottom: 0;
+}
+@media screen and (max-width: 600px) {
+.tab button {
+  padding: 10px 8px; /* Adjust the padding of the tab buttons */
+  font-size: 14px;   /* Reduce the font size of the tab buttons */
+}
+.tabcontent {
+  width: 100%;       /* Make the tab content full width */
+}
+.tab {
+width: 100%;
+}
+.autohide{
+display: none;
+}
+footer{
+display: none;
+}
+.bfooter{
+display: block;
+}
+}
+input {
+border-radius: 16px;
+border-color: #0080FF;
+font-size: 24px;
+font-family: monospace;
+font-weight: lighter;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    .run {
+        background-color: #0080FF;
+        color: #FFF;
+        border-radius: 16px;
+        width: 160px;
+        height: 80px;
+        font-size: 24px;
+        border-color: #1f3b67;
+        border-width: 4px;
+    }
+    .code {
+        height: 400px;
+        width: 100%;
+        font-family: monospace;
+        border-color: #0080FF;
+        border: solid #0080FF;
+    }
+    .result {
+        height: 400px;
+        width: 100%;
+        border-color: #0080FF;
+        border: solid #0080FF;
+        background-color: #FFF;
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    .centered {
+        text-align: center;
+    }
+    .realtime {
+        background-color: #b8d3ff;
+        border-color: #0080FF;
+    }
+
+</style>
